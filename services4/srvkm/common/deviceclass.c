@@ -2376,7 +2376,7 @@ PVRSRVDCMemInfoIsPhysContig(PVRSRV_KERNEL_MEM_INFO *psKernelMemInfo)
 
 ******************************************************************************/
 IMG_EXPORT
-IMG_BOOL PVRGetDisplayClassJTable(PVRSRV_DC_DISP2SRV_KMJTABLE *psJTable)
+IMG_BOOL PVRGetDisplayClassJTable2(PVRSRV_DC_DISP2SRV_KMJTABLE *psJTable)
 {
 	psJTable->ui32TableSize = sizeof(PVRSRV_DC_DISP2SRV_KMJTABLE);
 	psJTable->pfnPVRSRVRegisterDCDevice = &PVRSRVRegisterDCDeviceKM;
@@ -2771,7 +2771,7 @@ PVRSRV_ERROR PVRSRVGetBCBufferKM (IMG_HANDLE hDeviceKM,
 
 ******************************************************************************/
 IMG_EXPORT
-IMG_BOOL PVRGetBufferClassJTable(PVRSRV_BC_BUFFER2SRV_KMJTABLE *psJTable)
+IMG_BOOL PVRGetBufferClassJTable2(PVRSRV_BC_BUFFER2SRV_KMJTABLE *psJTable)
 {
 	psJTable->ui32TableSize = sizeof(PVRSRV_BC_BUFFER2SRV_KMJTABLE);
 

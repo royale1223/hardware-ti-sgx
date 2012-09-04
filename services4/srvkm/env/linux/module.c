@@ -170,8 +170,8 @@ EXPORT_SYMBOL(gpsIONClient);
 #endif /* defined(CONFIG_ION_OMAP) */
 
 /* PRQA S 3207 2 */ /* ignore 'not used' warning */
-EXPORT_SYMBOL(PVRGetDisplayClassJTable);
-EXPORT_SYMBOL(PVRGetBufferClassJTable);
+EXPORT_SYMBOL(PVRGetDisplayClassJTable2);
+EXPORT_SYMBOL(PVRGetBufferClassJTable2);
 
 #if defined(PVR_LDM_DEVICE_CLASS) && !defined(SUPPORT_DRI_DRM)
 /*

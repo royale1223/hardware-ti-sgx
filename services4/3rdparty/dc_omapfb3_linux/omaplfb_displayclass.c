@@ -1638,7 +1638,7 @@ OMAPLFB_ERROR OMAPLFBInit(void)
 	unsigned i;
 	unsigned uiDevicesFound = 0;
 
-	if(OMAPLFBGetLibFuncAddr ("PVRGetDisplayClassJTable", &gpfnGetPVRJTable) != OMAPLFB_OK)
+	if(OMAPLFBGetLibFuncAddr ("PVRGetDisplayClassJTable2", &gpfnGetPVRJTable) != OMAPLFB_OK)
 	{
 		return OMAPLFB_ERROR_INIT_FAILURE;
 	}

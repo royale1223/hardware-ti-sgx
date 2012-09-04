@@ -225,7 +225,7 @@ typedef struct DISPLAYCLASS_FLIP_COMMAND2_TAG
 typedef IMG_BOOL (*PFN_DC_GET_PVRJTABLE)(PPVRSRV_DC_DISP2SRV_KMJTABLE);
 
 /* Prototype for platforms that access the JTable via linkage */
-IMG_IMPORT IMG_BOOL PVRGetDisplayClassJTable(PVRSRV_DC_DISP2SRV_KMJTABLE *psJTable);
+IMG_IMPORT IMG_BOOL PVRGetDisplayClassJTable2(PVRSRV_DC_DISP2SRV_KMJTABLE *psJTable);
 
 
 #if defined (__cplusplus)
