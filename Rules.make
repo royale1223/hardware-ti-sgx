@@ -5,19 +5,17 @@
 HOME=$(ANDROID_ROOT_DIR)
 
 #Current Directory where Graphics SDK is installed
-GRAPHICS_INSTALL_DIR=$(ANDROID_ROOT_DIR)/hardware/ti/sgx
+GRAPHICS_INSTALL_DIR=$(ANDROID_ROOT_DIR)/hardware/ti/sitara/sgx
 
 #Path of Android Framework
 ANDROID_ROOT=$(ANDROID_ROOT_DIR)
 
-#set toolchain root path for arm-eabi
-CSTOOL_DIR=$(ANDROID_ROOT_DIR)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6
-CSTOOL_PREFIX=arm-eabi-
-CSTOOL_PATH=$(CSTOOL_DIR)/bin
-
+#set toolchain root path
+CSTOOL_PATH=$(dir $(TARGET_TOOLS_PREFIX))
+CSTOOL_PREFIX=$(notdir $(TARGET_TOOLS_PREFIX))
 
 #set the kernel installation path
-KERNEL_INSTALL_DIR=$(ANDROID_ROOT_DIR)/kernel
+KERNEL_INSTALL_DIR=$(ANDROID_ROOT_DIR)/out/target/product/$(TARGET_PRODUCT)/obj/kernel
 
 #set filesystem path
 TARGETFS_INSTALL_DIR=$(ANDROID_ROOT_DIR)/out/target/product/$(TARGET_PRODUCT)/
